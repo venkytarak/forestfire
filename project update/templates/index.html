@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>FFP</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+    
+      .middle
+
+      {
+        width: 100%;
+        height: 60vh;
+       
+       
+      }
+      .content
+      {
+        margin-top: 7rem;
+      }
+
+      .content img{
+        width: 35rem;
+        height:35rem;
+      }
+      .content .text
+      {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-self: center;
+         text-align: center;
+         height: 60vh;
+       
+         
+         
+      }
+      .content .image
+      {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-self: center;
+         text-align: center;
+         
+      }
+      .text h1{
+        font-size: 4rem;
+        color: green;
+        
+      }
+      .text p{
+        font-size: 2rem;
+        color: green;
+        
+      }
+      span{
+        font-size: 8rem;
+       
+      }
+      .predict{
+        width: 26rem;
+        margin-left: 15rem;
+        height: 3rem;
+      }
+      .navbar-nav
+      {
+        width: 50rem;
+        margin-left: 40rem;
+        justify-content: space-around;
+      
+      }
+      .icons{
+        width: 100%;
+      
+       display: flex;
+  justify-content: space-between;
+       
+      }
+      .icon {
+        width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon i {
+  font-size: 2.2rem;
+}
+.matter {
+  height: 10rem;
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  margin-top: 3rem;
+  border-radius: 5px;
+}
+.num
+{
+  font-size: 3rem;
+}
+.card
+{
+  border: none;
+  transition:transform .5s;
+}
+.card:hover{
+  
+  border:2px solid #999;
+  transform: scale(1.1);
+  box-shadow:10px 5px 5px 5px solid #000;
+}
+.nav-link
+{
+  color: green;
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+.ct
+{
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 400;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+      
+      
+      /*
+      .content .text h1 ,p
+      {
+        background-color: blue;
+       justify-content: center;
+       align-items: center;
+       text-align: center; 
+     
+       top: 50%;
+       transform: translate(50%,50%);
+      
+      }*/
+    </style>
+</head>
+<body>
+    <section class="home " id="home">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg   justify-content-center  ">
+                        <div class="container-fluid">
+                        <a href="#" class="navbar-brand heading">
+                          <h1 class="text-center">FFP</h1></a>
+                        <button class="navbar-toggler" type="button" data-target="#mynav"data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+                        
+                         
+                       
+                        <div class="collapse navbar-collapse  mt-2" id="mynav">
+                         
+                          
+                    <ul class="navbar-nav  ">
+                      
+                        <li class="nav-item">
+                           <a href="#" class="nav-link  ">
+                            Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">
+                            About Us</a>
+                       </li>
+                       <li class="nav-item">
+                        <a href="/wild1" class="nav-link">predict animal</a>
+                     </li>
+                     <li class="nav-item">
+                      <a href="/detect" class="nav-link">Dectect Fire</a>
+                   </li>
+                       </ul>
+                       </div>
+                       </div>
+                       </nav>
+                      
+                </div>
+            </div>
+          <div class="container-fluid middle mt-5">
+            <div class="row content">
+              <div class="col-8 text">
+                <div class="">
+                <h1 class="text-center"><span>F</span>orest <span>F</span>ire <span>P</span>rediction</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nemo.</p>
+                <button class="btn btn-success predict">predict </button>
+              </div>
+              </div>
+              <div class="col-4 image">
+                <img src="./bulb.jfif" alt="bulb">
+
+              </div>
+             
+            </div>
+          </div>
+          <div class="">
+            <h1>{{pred}}</h1>
+          </div>
+          
+          <div class="container-fluid mt-5">
+            <div class="row icons">
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-0"style="min-height:100px; text-align: center;  ">
+                <div class="icon">
+                 <img src="https://cdn-icons-png.flaticon.com/512/3039/3039008.png" width="100rem" alt="">
+                  <h2>
+                   <span class="num" data-value="867"> 000 </span> + <br />
+                   Forests Fired
+                  </h2>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-0"style="min-height:100px; text-align: center;">
+                <div class="icon">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ-BZN0NRT0h_P6pr0h954A2_DrLW3HwISqg&usqp=CAU" height="120rem" alt="">
+                  <h2>
+                   <span class="num" data-value="500"></span>k+ <br />
+                    Animals died
+                  </h2>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-0" style="min-height:100px; text-align: center;">
+                <div class="icon">
+                 <img src="https://cdni.iconscout.com/illustration/premium/thumb/climate-change-5622553-4678430.png" height="120rem" alt="">
+                  <h2>
+                   <span class="num" data-value="75">0</span>% <br />
+                    Global warming
+                  </h2>
+                </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </section>
+             <!-- <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-0" style=" text-align: center;">
+                <div class="icon">
+                  <i class="fa-solid fa-user-graduate" style="color: #333333"></i>
+                  <h2>
+                    <span class="num" data-value="50">00</span> K + <br />
+                    Learners
+                  </h2>
+                </div>
+              </div>-->
+            </div>
+          </div>
+      
+            
+       
+        </div>
+        <div class="container mt-5">
+          <div class="row mt-5">
+            <div class="col-12">
+              <h1 class="text-center">How It Works</h1>
+            </div>
+          </div>
+          <div class="row cards mt-5">
+            
+            <div class="col-4">
+            
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpW3ATbmd2NltDSblxokwpqBvgKJ-v9prFwg&usqp=CAU" alt="Card image cap">
+                <div class="card-body">e up the bulk of the card's content.</p>
+                 <a href="/predict"> <button class="btn btn-success">wildFires</button></a>
+                </div>
+              </div>
+            
+            </div>
+         
+            <div class="col-4">
+             
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBb8TsRvdnpoh0lMkiRD_GYEQjT0xuyR3GOg&usqp=CAU" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card </p>
+                </div>
+              </div>
+          
+            </div>
+        
+            <div class="col-4">
+             
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://images.assetsdelivery.com/compings_v2/jemastock/jemastock2002/jemastock200202404.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card tit.</p>
+                </div>
+              </div>
+           
+            </div>
+          </div>
+          </div>
+       
+        <script>
+          let value = document.querySelectorAll(".num");
+let interval = 2000;
+value.forEach((value) => {
+  let sval = 0;
+  let eval = parseInt(value.getAttribute("data-value"));
+  let dur = Math.floor(interval / eval);
+  let stop = setInterval(function () {
+    sval += 1;
+    value.textContent = sval;
+    if (sval == eval) {
+      clearInterval(stop);
+    }
+  }, dur);
+});
+
+
+        </script>
+           
+    
+</body>
+</html>
